@@ -3,24 +3,24 @@ interface Address {
     country: string;
 }
 
-interface User {
+type UserProfile = {
     name: string;
     age: number;
     email: string;
     address?: Address;
-}
+};
 
-const mango: User = {
+const mango: UserProfile = {
     name: 'Mango',
     age: 30,
     email: 'john@example.com',
     address: {
         city: 'New York',
-        country: 'USA'
+        country: 'USA' 
     }
 };
 
-const poly: User = {
+const poly: UserProfile = {
     name: 'Mango',
     age: 30,
     email: 'john@example.com'
